@@ -29,6 +29,13 @@ class RootViewController: UIPageViewController {
         }
     }
 
+    func changeTwoViewController() {
+        self.setViewControllers([myViewControllers[1]], direction: .forward, animated: true, completion: nil)
+    }
+    
+    func changeOneViewController() {
+        self.setViewControllers([myViewControllers[0]], direction: .reverse, animated: true, completion: nil)
+    }
 }
 
 extension RootViewController: UIPageViewControllerDataSource {
